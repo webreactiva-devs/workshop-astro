@@ -12,11 +12,14 @@
 **¡Ya tienes todo listo para el taller!**
 
 &nbsp;
+&nbsp;
 
-> Notas: 
-> - Debes tener instalado Node.js 14.18.0, v16.12.0 o superior
-> - Usaremos Visual Studio Code durante el taller
-> - Aunque no seas crack de la consola, necesitarás lanzar algunos comandos sencillos por allí
+## Notas sobre el taller
+
+- Debes tener instalado Node.js 14.18.0, v16.12.0 o superior
+- Para no perderse en el taller es recomendable tener conocimientos básicos de HTML y JavaScript
+- Usaremos Visual Studio Code
+- Aunque no seas crack de la consola, necesitarás lanzar algunos comandos sencillos por allí
 
 &nbsp;
 &nbsp;
