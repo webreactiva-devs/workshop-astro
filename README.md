@@ -2,7 +2,7 @@
 
 > Taller en directo con suscriptores de Web Reactiva para conocer mejor qué es Astro y cómo podemos crear potentes webs con una menor carga de JavaScript. Astro es compatible con React, Vue, Svelte y otros. Y tienen versión estable ;)
 
-## Primeros paso:
+## Sigue estos pasos antes del taller:
 
 - Haz una copia local de este repositorio usando `git clone` o descargando el código
 - En tu ordenador, ejecuta `npm install` para cargar las dependencias. 
