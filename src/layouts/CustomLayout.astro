@@ -1,0 +1,28 @@
+---
+import FooterBlock from "../components/FooterBlock.astro";
+
+---
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Este es mi Custom Layout</title>
+	</head>
+	<body>
+		<main class="main-content">
+			<slot />
+		</main>
+		<FooterBlock></FooterBlock>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+	}
+	.main-content {
+		text-align: center;
+	}
+</style>
