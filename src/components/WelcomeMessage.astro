@@ -4,11 +4,23 @@ interface Props {
   surname?: string
 }
 
-const response = await fetch("https://randomuser.me/api/");
-const data = await response.json()
-const randomUser = data.results[0];
+const defaultSurname = 'Pérez'
 
-const { name = 'Bernabé', surname = randomUser.name.last } =  Astro.props
+const getSurname = async () => {
+  try {
+    const response = await fetch("https://randomuser.me/api/");
+    const data = await response.json();
+    const randomUser = data.results[0];
+    return randomUser.name.last;
+  }
+  catch (e) {
+    console.log(e)
+    return defaultSurname;
+  }
+}
+
+const { name = 'Bernabé', surname = getSurname()} =  Astro.props
+
 
 ---
 <h1>Hola malandriner {name} {surname}!</h1>
