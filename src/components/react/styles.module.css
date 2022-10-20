@@ -1,0 +1,17 @@
+.container {
+  background-color: greenyellow;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.numbers {
+  font-size: 5rem;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+}
