@@ -1,12 +1,14 @@
 ---
 interface Props {
   name: string
+  surname?: string
 }
-
-const { name = 'Bernabé' } =  Astro.props
 
 const response = await fetch("https://randomuser.me/api/");
 const data = await response.json()
 const randomUser = data.results[0];
+
+const { name = 'Bernabé', surname = randomUser.name.last } =  Astro.props
+
 ---
-<h1>Hola malandriner {name} {randomUser.name.last}!</h1>
+<h1>Hola malandriner {name} {surname}!</h1>
