@@ -1,0 +1,20 @@
+---
+import CustomLayout from "../../layouts/CustomLayout.astro";
+
+
+export function getStaticPaths() {
+  return [
+    {params: {nick: 'mimi'}},
+    {params: {nick: 'garfield'}},
+    {params: {nick: 'misifu'}},
+    {params: {nick: 'anacleto'}},
+  ];
+  // const nicks = ['mimi', 'garfield', 'misifu', 'anacleto']
+  // return nicks.map(nick => ({params: {nick}}))
+}
+
+const { nick } =  Astro.params;
+---
+<CustomLayout title={`Mi gato se llama {nick}`}>
+  <h1>Mi gato se llama {nick}</h1>
+</CustomLayout>
