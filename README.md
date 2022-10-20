@@ -5,6 +5,7 @@
 ## Sigue estos pasos antes del taller:
 
 - Haz una copia local de este repositorio usando `git clone` o descargando el código
+- Pasa a la rama `start`.
 - En tu ordenador, ejecuta `npm install` para cargar las dependencias. 
 - Lanza `npm run dev` y Astro te mostrará en consola el servidor local (suele ser localhost:3000)
 - Carga esa web y verás una bienvenida muy malandriner
