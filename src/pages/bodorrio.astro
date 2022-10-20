@@ -1,8 +1,12 @@
 ---
+import ReactCounter from "../components/react/ReactCounter.jsx";
+import VueCounter from "../components/vue/VueCounter.vue";
+
 import CustomLayout from "../layouts/CustomLayout.astro";
 ---
 <CustomLayout title="React y Vue se casan">
   <div style="display: flex; justify-content: center; align-items: start; height: 200vh">
-    Aquí van los componentes de Vue y React
+    <VueCounter client:load></VueCounter>
+    <ReactCounter client:load></ReactCounter>
   </div>
 </CustomLayout>
