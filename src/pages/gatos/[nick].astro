@@ -1,5 +1,6 @@
 ---
 import CustomLayout from "../../layouts/CustomLayout.astro";
+import { upperFistLetter } from "../../lib/utils";
 
 
 export function getStaticPaths() {
@@ -15,6 +16,6 @@ export function getStaticPaths() {
 
 const { nick } =  Astro.params;
 ---
-<CustomLayout title={`Mi gato se llama {nick}`}>
-  <h1>Mi gato se llama {nick}</h1>
+<CustomLayout title={`Mi gato se llama ${upperFistLetter(nick)}`}>
+  <h1>Mi gato se llama {upperFistLetter(nick)}</h1>
 </CustomLayout>
