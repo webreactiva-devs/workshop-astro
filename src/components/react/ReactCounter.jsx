@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 
-export default function ReactCounter(props) {
-  let [count, setCount] = useState(0)
+export default function ReactCounter({initialCount = 0}) {
+  let [count, setCount] = useState(initialCount)
   
   function increase() {
     setCount(count + 1)

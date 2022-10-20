@@ -11,9 +11,14 @@
 
 <script>
 export default {
+  props: {
+    initialCount: {
+      default: 0
+    }
+  },
   data() {
     return {
-      count: 0
+      count: this.initialCount
     }
   },
   methods: {

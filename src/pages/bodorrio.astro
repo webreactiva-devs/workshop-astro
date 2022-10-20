@@ -6,8 +6,8 @@ import CustomLayout from "../layouts/CustomLayout.astro";
 ---
 <CustomLayout title="React y Vue se casan">
   <div class="container-bodorrio">
-    <VueCounter client:visible></VueCounter>
-    <ReactCounter client:visible></ReactCounter>
+    <VueCounter initialCount="11" client:load></VueCounter>
+    <ReactCounter initialCount={11} client:load></ReactCounter>
   </div>
 </CustomLayout>
 
@@ -15,7 +15,7 @@ import CustomLayout from "../layouts/CustomLayout.astro";
   .container-bodorrio {
     display: flex; 
     justify-content: center; 
-    align-items: flex-end; 
+    align-items: start; 
     height: 200vh
   }
 </style>
